@@ -1,0 +1,159 @@
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/no_AUG/hourglass_184x192_6d_2f_2stack_record_inter_2stride_noAUG/ 
+---
+
+                    ===============================================================================================================================
+                    ===============================================================================================================================
+                    ===============================================================================================================================
+
+                                                    ######################################
+                                                                  128 x 128 resize 3d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_2stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_2stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_3d_2f_2stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_2stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_3d_2f_2stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_3d_2f_2stack_record_noAUG/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 3d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_1stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_1stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_3d_2f_1stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_1stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_3d_2f_1stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_3d_2f_1stack_record_noAUG/ 
+---
+                                                    ######################################
+                                                                  128 x 128 resize 3d 3s  noAUG b14
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py --resume-from work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py \
+work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14/ 
+---
+                                                    ######################################
+                                                                  128 x 128 resize 6d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_2stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_2stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_6d_2f_2stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_2stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_6d_2f_2stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_6d_2f_2stack_record_noAUG/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 6d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_1stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_1stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_6d_2f_1stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_1stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_6d_2f_1stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_6d_2f_1stack_record_noAUG/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 6d 3s  noAUG b14
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_3stack_record_noAUG_b14.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_3stack_record_noAUG_b14.py --resume-from work_dirs/hourglass_184resize128_6d_2f_3stack_record_noAUG_b14/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_6d_2f_3stack_record_noAUG_b14.py \
+work_dirs/hourglass_184resize128_6d_2f_3stack_record_noAUG_b14/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_6d_2f_3stack_record_noAUG_b14/ 
+---
+
+
+
+                                                    ######################################
+                                                                  128 x 128 resize 10d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_2stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_2stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_10d_2f_2stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_2stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_10d_2f_2stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_10d_2f_2stack_record_noAUG/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 10d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_1stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_1stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_10d_2f_1stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_1stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_10d_2f_1stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_10d_2f_1stack_record_noAUG/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 10d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_3stack_record_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_3stack_record_noAUG.py --resume-from work_dirs/hourglass_184resize128_10d_2f_3stack_record_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_3stack_record_noAUG.py \
+work_dirs/hourglass_184resize128_10d_2f_3stack_record_noAUG/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_10d_2f_3stack_record_noAUG/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 10d 3s  noAUG b14
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_3stack_record_noAUG_b14.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_3stack_record_noAUG_b14.py --resume-from work_dirs/hourglass_184resize128_10d_2f_3stack_record_noAUG_b14/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_10d_2f_3stack_record_noAUG_b14.py \
+work_dirs/hourglass_184resize128_10d_2f_3stack_record_noAUG_b14/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_10d_2f_3stack_record_noAUG_b14/ 
+---
+
+                                                    ######################################
+                                                                  128 x 128 resize 3d 3s  noAUG b14 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py --work-dir work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py --resume-from work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_2/latest.pth  --work-dir work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py \
+work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_2/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_2/ 
+---
+                                                    ######################################
+                                                                  128 x 128 resize 3d 3s  noAUG b14 3
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py --work-dir work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_3 --seed 447637819
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py --resume-from work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_3/latest.pth  --work-dir work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_3
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/resize128_noAUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14.py \
+work_dirs/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_3/epoch_210.pth --img-root ../../datasets/atomos/cubic_resize128/ \
+--json-file ../../datasets/atomos/annotations/128x128_test_record.json --out-root output/no_AUG/hourglass_184resize128_3d_2f_3stack_record_noAUG_b14_3/ 
+---

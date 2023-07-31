@@ -1,0 +1,141 @@
+                                                    ######################################
+                                                                  184 x 256 inter 7k 2stride 2s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_2stack_record.py --work-dir work_dirs/hourglass_184x256_6d_2f_2stack_record_7k_8b
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_2stack_record.py --resume-from work_dirs/hourglass_184x256_6d_2f_2stack_record_7k_8b/latest.pth --work-dir work_dirs/hourglass_184x256_6d_2f_2stack_record_7k_8b
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_2stack_record.py \
+work_dirs/hourglass_184x256_6d_2f_2stack_record_7k_8b/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_6d_2f_2stack_record_7k_8b/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 7k 2stride 3s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_3stack_record.py --work-dir work_dirs/hourglass_184x256_6d_2f_3stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_3stack_record.py --resume-from work_dirs/hourglass_184x256_6d_2f_3stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_6d_2f_3stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_3stack_record.py \
+work_dirs/hourglass_184x256_6d_2f_3stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_6d_2f_3stack_record_7k/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 7k 2stride 4s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_4stack_record.py --work-dir work_dirs/hourglass_184x256_6d_2f_4stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_4stack_record.py --resume-from work_dirs/hourglass_184x256_6d_2f_4stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_6d_2f_4stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_4stack_record.py \
+work_dirs/hourglass_184x256_6d_2f_4stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_6d_2f_4stack_record_7k/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 7k 2stride 1s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_1stack_record_8batch.py --work-dir work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_1stack_record_8batch.py --resume-from work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b/latest.pth --work-dir work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_1stack_record_8batch.py \
+work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_6d_2f_1stack_record_7k_8b/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 7k 2stride 5s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_5stack_record.py --work-dir work_dirs/hourglass_184x256_6d_2f_5stack_record_7k_8b
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_5stack_record.py --resume-from work_dirs/hourglass_184x256_6d_2f_5stack_record_7k_8b/latest.pth --work-dir work_dirs/hourglass_184x256_6d_2f_5stack_record_7k_8b
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_5stack_record.py \
+work_dirs/hourglass_184x256_6d_2f_5stack_record_7k_8b/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_6d_2f_5stack_record_7k_8b/ 
+
+
+=========================================================================================================================================================
+=========================================================================================================================================================
+=========================================================================================================================================================
+
+                                                    ######################################
+                                                                  184 x 256 inter 10d 2s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_2stack_record.py --work-dir work_dirs/hourglass_184x256_10d_2f_2stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_2stack_record.py --resume-from work_dirs/hourglass_184x256_10d_2f_2stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_10d_2f_2stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_2stack_record.py \
+work_dirs/hourglass_184x256_10d_2f_2stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_10d_2f_2stack_record_7k/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 10d 3s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_3stack_record.py --work-dir work_dirs/hourglass_184x256_10d_2f_3stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_3stack_record.py --resume-from work_dirs/hourglass_184x256_10d_2f_3stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_10d_2f_3stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_3stack_record.py \
+work_dirs/hourglass_184x256_10d_2f_3stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_10d_2f_3stack_record_7k/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 10d 1s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_1stack_record.py --work-dir work_dirs/hourglass_184x256_10d_2f_1stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_1stack_record.py --resume-from work_dirs/hourglass_184x256_10d_2f_1stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_10d_2f_1stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_1stack_record.py \
+work_dirs/hourglass_184x256_10d_2f_1stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_10d_2f_1stack_record_7k/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 10d 4s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_4stack_record.py --work-dir work_dirs/hourglass_184x256_10d_2f_4stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_4stack_record.py --resume-from work_dirs/hourglass_184x256_10d_2f_4stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_10d_2f_4stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_4stack_record.py \
+work_dirs/hourglass_184x256_10d_2f_4stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_10d_2f_4stack_record_7k/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 10d 5s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_5stack_record.py --work-dir work_dirs/hourglass_184x256_10d_2f_5stack_record_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_5stack_record.py --resume-from work_dirs/hourglass_184x256_10d_2f_5stack_record_7k/latest.pth --work-dir work_dirs/hourglass_184x256_10d_2f_5stack_record_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_5stack_record.py \
+work_dirs/hourglass_184x256_10d_2f_5stack_record_7k/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_10d_2f_5stack_record_7k/ 
+
+
+=========================================================================================================================================================
+=========================================================================================================================================================
+=========================================================================================================================================================
+
+                                                    ######################################
+                                                                  184 x 256 inter 6d 1s 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_1stack_record_8batch.py --work-dir work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_1stack_record_8batch.py --resume-from work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b_2/latest.pth --work-dir work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_6d_2f_1stack_record_8batch.py \
+work_dirs/hourglass_184x256_6d_2f_1stack_record_7k_8b_2/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_6d_2f_1stack_record_7k_8b_2/ 
+
+                                                    ######################################
+                                                                  184 x 256 inter 10d 3s 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_3stack_record.py --work-dir work_dirs/hourglass_184x256_10d_2f_3stack_record_7k_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_3stack_record.py --resume-from work_dirs/hourglass_184x256_10d_2f_3stack_record_7k_2/latest.pth --work-dir work_dirs/hourglass_184x256_10d_2f_3stack_record_7k_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x256_10d_2f_3stack_record.py \
+work_dirs/hourglass_184x256_10d_2f_3stack_record_7k_2/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_184x256_10d_2f_3stack_record_7k_2/ 

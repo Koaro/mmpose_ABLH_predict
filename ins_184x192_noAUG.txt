@@ -1,0 +1,159 @@
+                                                    ######################################
+                                                                  184 x 192 inter 10d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 10d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_1stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_1stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_1stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_10d_2f_1stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 6d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_1stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_1stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_1stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_6d_2f_1stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_1stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_1stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_1stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_1stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 10d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_3stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_10d_2f_3stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_2stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_2stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_2stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_2stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 6d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_2/
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_2/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_2/
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_2/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_2/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 6d 3s  noAUG 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG.py --work-dir work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG_2/
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG_2/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG_2/
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG_2/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_6d_2f_3stack_record_inter_2stride_noAUG_2/ 
+---
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG 3
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_3/
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_3/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_3/
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_3/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_3/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG 4
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_4/ --seed 777372516
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_4/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_4/
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_4/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_4/ 
+---
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG 5
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_5/ --seed 990991531
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_5/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_5/
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_5/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_3d_2f_3stack_record_inter_2stride_noAUG_5/ 
+
+
+
+ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 2s  noAUG altRES
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG.py --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG_altRES
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG_altRES/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG_altRES
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/184x192_noAUG/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG_altRES/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/noAUG_184x192/hourglass_184x192_10d_2f_2stack_record_inter_2stride_noAUG_altRES/ 
+---

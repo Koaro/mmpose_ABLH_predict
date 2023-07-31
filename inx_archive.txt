@@ -1,0 +1,93 @@
+                                                    ######################################
+                                                                    6d2s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d2s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d2s.py --resume-from work_dirs/hourglass_AfterInterpolation_6d2s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d2s.py \
+work_dirs/hourglass_AfterInterpolation_6d2s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_6d2s
+
+                                                    ######################################
+                                                                    6d1s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d1s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d1s.py --resume-from work_dirs/hourglass_AfterInterpolation_6d1s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d1s.py \
+work_dirs/hourglass_AfterInterpolation_6d1s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_6d1s
+
+                                                    ######################################
+                                                                    6d3s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d3s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d3s.py --resume-from work_dirs/hourglass_AfterInterpolation_6d3s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d3s.py \
+work_dirs/hourglass_AfterInterpolation_6d3s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_6d3s
+
+                                                    ######################################
+                                                                    6d4s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d4s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d4s.py --resume-from work_dirs/hourglass_AfterInterpolation_6d4s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_6d4s.py \
+work_dirs/hourglass_AfterInterpolation_6d4s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_6d4s
+
+============================================================================================================================================
+
+                                                    ######################################
+                                                                    10d2s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d2s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d2s.py --resume-from work_dirs/hourglass_AfterInterpolation_10d2s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d2s.py \
+work_dirs/hourglass_AfterInterpolation_10d2s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_10d2s
+
+                                                    ######################################
+                                                                    10d1s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d1s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d1s.py --resume-from work_dirs/hourglass_AfterInterpolation_10d1s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d1s.py \
+work_dirs/hourglass_AfterInterpolation_10d1s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_10d1s
+
+                                                    ######################################
+                                                                    10d3s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d3s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d3s.py --resume-from work_dirs/hourglass_AfterInterpolation_10d3s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d3s.py \
+work_dirs/hourglass_AfterInterpolation_10d3s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_10d3s
+
+                                                    ######################################
+                                                                    10d4s
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d4s.py
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d4s.py --resume-from work_dirs/hourglass_AfterInterpolation_10d4s/latest.pth
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d4s.py \
+work_dirs/hourglass_AfterInterpolation_10d4s/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_10d4s
+
+------------------------------------------------------------
+
+                                                    ######################################
+                                                                    10d2s 2
+                                                    ######################################
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d2s.py --work-dir work_dirs/hourglass_AfterInterpolation_10d2s_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d2s.py --resume-from work_dirs/hourglass_AfterInterpolation_10d2s_2/latest.pth --work-dir work_dirs/hourglass_AfterInterpolation_10d2s_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_AfterInterpolation_10d2s.py \
+work_dirs/hourglass_AfterInterpolation_10d2s_2/epoch_210.pth --img-root ../../datasets/atomos/2-feature/ \
+--json-file ../../datasets/atomos/annotations/record/test_LIDAR.json --out-root output/hourglass_AfterInterpolation_10d2s_2

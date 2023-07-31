@@ -1,0 +1,350 @@
+                                                    ######################################
+                                                                  184 x 192 inter 6d 1s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr.py --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr.py --resume-from work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr_7k/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr_7k/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 1s 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2.py --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2.py --resume-from work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2_7k/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2_7k/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr2_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 1s 3
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3.py --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3.py --resume-from work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k/best_AP_epoch_190.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr3_7k_best/ 
+
+                                                    ######################################
+                                                    ######################################
+                                                    ######################################
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 1s 4
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4.py --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4.py --resume-from work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k/epoch_400.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k/best_AP_epoch_130.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k_best/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_7k_300/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 2s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr_7k/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr_7k/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_210_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 2s 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_2/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_2/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_2/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_2/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_210_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 3s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k/ 
+
+
+===============================================================================
+===============================================================================
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 1s 4
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4.py --work-dir work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4.py --resume-from work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4.py \
+work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k/epoch_400.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k/ 
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4.py \
+work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_7k_300/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 2s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr_7k/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr_7k/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_210_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 2s 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_2/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_2/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_2/ 
+
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_2/epoch_210.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_210_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 3s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k/ 
+
+
+===============================================================================
+===============================================================================
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 1s 
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 2s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k/ 
+
+
+
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_120.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_120/ 
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_200.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_200/ 
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_170.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_170/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 2s  noAUG 2
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_2/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_2/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_2/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 2s  noAUG 3
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_3
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_3/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_3
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_3/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG_3/ 
+
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 6d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_6d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+
+=========================
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 10d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_10d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+=========================
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 2s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_2stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 1s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_1stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG
+                                                    ######################################
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG/ 
+
+                                                    ######################################
+                                                                  184 x 192 inter 3d 3s  noAUG 2
+                                                    ###################################### 
+
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG_2
+python tools/train.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py --resume-from work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG_2/latest.pth --work-dir work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG_2
+---
+python top_down_img_predict.py configs/body/2d_kpt_sview_rgb_img/topdown_heatmap/atomos/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_noAUG.py \
+work_dirs/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG_2/epoch_300.pth --img-root ../../datasets/atomos/184x192_interpolated/ \
+--json-file ../../datasets/atomos/annotations/184x192_interpolated/184x192_inter_test_record.json --out-root output/lr/hourglass_184x192_3d_2f_3stack_record_inter_2stride_lr4_300_7k_noAUG_2/ 
